@@ -4,6 +4,7 @@ import TabContext from "@mui/lab/TabContext"
 import TabList from "@mui/lab/TabList"
 import TabPanel from "@mui/lab/TabPanel"
 import { useState } from "react"
+import { Graph } from "./Graph"
 
 export function Menu() {
   const [value, setValue] = useState("1")
@@ -19,7 +20,9 @@ export function Menu() {
         </TabList>
       </Box>
       <TabPanel value="1">Item One</TabPanel>
-      <TabPanel value="Gráfico">Gráfico</TabPanel>
+      <TabPanel value="Gráfico">
+        <Graph />
+      </TabPanel>
     </TabContext>
   )
 }
