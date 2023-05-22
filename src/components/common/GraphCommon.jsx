@@ -36,23 +36,23 @@ export const renderCustomAxisTick = ({ x, y, payload }) => {
 }
 
 export const graphData = [
-  { name: "Sino", quantidade: 20 },
-  { name: "Impresora", quantidade: 10 },
-  { name: "Carro", quantidade: 15 },
-  { name: "Camisa", quantidade: 30 },
-  { name: "Disquete", quantidade: 40 },
-  { name: "Foguete", quantidade: 30 },
-  { name: "Casa", quantidade: 30 },
-  { name: "Lixo", quantidade: 30 },
+  { name: "Sino", value: 20, color: "#0088FE" },
+  { name: "Impresora", value: 10, color: "#00C49F" },
+  { name: "Carro", value: 15, color: "#FFBB28" },
+  { name: "Camisa", value: 30, color: "#FF8042" },
+  { name: "Disquete", value: 40, color: "#0088FE" },
+  { name: "Foguete", value: 30, color: "#00C49F" },
+  { name: "Casa", value: 30, color: "#FFBB28" },
+  { name: "Lixo", value: 30, color: "#FF8042" },
 ]
 
 export const graphDataNegativo = [
-  { name: "Sino", quantidade: 20 },
-  { name: "Impresora", quantidade: -10 },
-  { name: "Carro", quantidade: 15 },
-  { name: "Camisa", quantidade: -30 },
-  { name: "Disquete", quantidade: 40 },
-  { name: "Foguete", quantidade: -30 },
-  { name: "Casa", quantidade: 30 },
-  { name: "Lixo", quantidade: 30 },
+  { name: "Sino", value: 20 },
+  { name: "Impresora", value: -10 },
+  { name: "Carro", value: 15 },
+  { name: "Camisa", value: -30 },
+  { name: "Disquete", value: 40 },
+  { name: "Foguete", value: -30 },
+  { name: "Casa", value: 30 },
+  { name: "Lixo", value: 30 },
 ]

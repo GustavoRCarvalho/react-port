@@ -18,7 +18,7 @@ export const GraphBarReferenceLine = () => (
       data={graphDataNegativo}
       margin={{ top: 30, right: 20, bottom: 5, left: 0 }}
     >
-      <Bar dataKey="quantidade" barSize={30} fill="#8884d8" />
+      <Bar dataKey="value" barSize={30} fill="#8884d8" />
       <Tooltip />
       <CartesianGrid strokeDasharray="3 3" />
       <ReferenceLine y={0} stroke="#000" />

@@ -1,6 +1,6 @@
 import "./Graph.css"
 import { GraphLine } from "../atoms/GraphLine"
-import { GraphBar } from "../atoms/GraphBar"
+import { GraphBar } from "../atoms/graph/GraphBar"
 import { GraphBarReferenceLine } from "../atoms/GraphBarReferenceLine"
 import { GraphPie } from "../atoms/GraphPie"
 

@@ -1,5 +1,5 @@
 import { Bar, BarChart, XAxis, YAxis } from "recharts"
-import { graphData, renderCustomAxisTick } from "../common/GraphCommon"
+import { graphData, renderCustomAxisTick } from "../../common/GraphCommon"
 import { GraphResponsiveContainer } from "./GraphResponsiveContainer"
 
 const renderCustomBarLabel = ({ x, y, width, value }) => {
@@ -23,7 +23,7 @@ export const GraphBar = () => (
       margin={{ top: 30, right: 20, bottom: 5, left: 0 }}
     >
       <Bar
-        dataKey="quantidade"
+        dataKey="value"
         barSize={30}
         fill="#8884d8"
         label={renderCustomBarLabel}

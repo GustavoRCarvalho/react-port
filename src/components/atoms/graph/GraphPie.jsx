@@ -1,14 +1,7 @@
 import { Cell, Pie, PieChart, Sector } from "recharts"
 import { useState } from "react"
 
-const data = [
-  { name: "Group A", value: 400 },
-  { name: "Group B", value: 300 },
-  { name: "Group C", value: 300 },
-  { name: "Group D", value: 200 },
-]
-
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"]
+import { graphData } from "../common/GraphCommon"
 
 export const GraphPie = () => {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -76,7 +69,7 @@ export const GraphPie = () => {
           y={ey}
           textAnchor={textAnchor}
           fill={fill}
-        >{`PV ${value}`}</text>
+        >{`value ${value}`}</text>
         <text
           x={ex + (cos >= 0 ? 1 : -1) * 12}
           y={ey}
@@ -95,7 +88,7 @@ export const GraphPie = () => {
       <Pie
         activeIndex={activeIndex}
         activeShape={renderActiveShape}
-        data={data}
+        data={graphData}
         cx="50%"
         cy="50%"
         innerRadius={60}
@@ -104,28 +97,14 @@ export const GraphPie = () => {
         dataKey="value"
         onMouseEnter={onPieEnter}
       >
-        {data.map((entry, index) => (
-          <Cell key={`cell-${index}`} fill={COLORS[index]} />
+        {graphData.map((entry, index) => (
+          <Cell
+            key={`cell-${index}`}
+            fill={entry.color}
+            className="cellPieGraph"
+          />
         ))}
       </Pie>
     </PieChart>
   )
-  // return (
-  //   <PieChart width={500} height={300}>
-  //     <Pie
-  //       data={data}
-  //       cx={120}
-  //       cy={200}
-  //       innerRadius={60}
-  //       outerRadius={80}
-  //       fill="#8884d8"
-  //       paddingAngle={5}
-  //       dataKey="value"
-  //     >
-  //       {data.map((entry, index) => (
-  //         <Cell key={`cell-${index}`} fill={COLORS[index]} />
-  //       ))}
-  //     </Pie>
-  //   </PieChart>
-  // )
 }

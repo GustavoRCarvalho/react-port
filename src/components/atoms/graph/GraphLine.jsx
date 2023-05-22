@@ -18,7 +18,7 @@ export const GraphLine = () => (
       data={graphData}
       margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
     >
-      <Line type="monotone" dataKey="quantidade" stroke="#8884d8" />
+      <Line type="monotone" dataKey="value" stroke="#8884d8" />
       <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
       <XAxis dataKey="name" tick={renderCustomAxisTick} />
       <YAxis />
