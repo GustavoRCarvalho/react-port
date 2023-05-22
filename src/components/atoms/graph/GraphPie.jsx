@@ -1,7 +1,7 @@
 import { Cell, Pie, PieChart, Sector } from "recharts"
 import { useState } from "react"
 
-import { graphData } from "../common/GraphCommon"
+import { graphData } from "../../common/GraphCommon"
 
 export const GraphPie = () => {
   const [activeIndex, setActiveIndex] = useState(0)

@@ -7,7 +7,10 @@ import {
   XAxis,
   YAxis,
 } from "recharts"
-import { graphDataNegativo, renderCustomAxisTick } from "../common/GraphCommon"
+import {
+  graphDataNegativo,
+  renderCustomAxisTick,
+} from "../../common/GraphCommon"
 import { GraphResponsiveContainer } from "./GraphResponsiveContainer"
 
 export const GraphBarReferenceLine = () => (
