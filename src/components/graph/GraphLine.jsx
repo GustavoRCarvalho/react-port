@@ -7,7 +7,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts"
-import { graphData, renderCustomAxisTick } from "../../common/GraphCommon"
+import { graphData, renderCustomAxisTick } from "../common/GraphCommon"
 import { GraphResponsiveContainer } from "./GraphResponsiveContainer"
 
 export const GraphLine = () => (

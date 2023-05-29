@@ -3,6 +3,7 @@ import CssBaseline from "@mui/material/CssBaseline"
 import { useMediaQuery } from "@mui/material"
 import React from "react"
 import { Menu } from "./components/pages/menu"
+import "./App.css"
 
 function App() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)")

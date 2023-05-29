@@ -1,0 +1,34 @@
+.FormContainer {
+  display: flex;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+
+  padding: 1em;
+}
+
+.AddressForm {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 500px;
+  padding: 1em;
+
+  justify-content: space-between;
+}
+
+.Alert {
+  margin-bottom: 1em;
+}
+
+.Divider {
+  width: 100%;
+}
+
+.TextFieldHalf {
+  width: 45%;
+}

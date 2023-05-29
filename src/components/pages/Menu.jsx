@@ -5,9 +5,10 @@ import TabList from "@mui/lab/TabList"
 import TabPanel from "@mui/lab/TabPanel"
 import { useState } from "react"
 import { Graph } from "./Graph"
+import { Forms } from "./Forms"
 
 export function Menu() {
-  const [value, setValue] = useState("1")
+  const [value, setValue] = useState("Formulários")
   const handleChange = (event, newValue) => {
     setValue(newValue)
   }
@@ -15,11 +16,15 @@ export function Menu() {
     <TabContext value={value}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <TabList onChange={handleChange} aria-label="lab API tabs example">
-          <Tab label="Item One" value="1" />
+          <Tab label="Home" value="Home" />
+          <Tab label="Formulários" value="Formulários" />
           <Tab label="Gráfico" value="Gráfico" />
         </TabList>
       </Box>
-      <TabPanel value="1">Item One</TabPanel>
+      <TabPanel value="Home">Home</TabPanel>
+      <TabPanel value="Formulários">
+        <Forms />
+      </TabPanel>
       <TabPanel value="Gráfico">
         <Graph />
       </TabPanel>

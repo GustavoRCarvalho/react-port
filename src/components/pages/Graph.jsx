@@ -1,8 +1,8 @@
 import "./Graph.css"
-import { GraphLine } from "../atoms/graph/GraphLine"
-import { GraphBar } from "../atoms/graph/GraphBar"
-import { GraphBarReferenceLine } from "../atoms/graph/GraphBarReferenceLine"
-import { GraphPie } from "../atoms/graph/GraphPie"
+import { GraphLine } from "../graph/GraphLine"
+import { GraphBar } from "../graph/GraphBar"
+import { GraphBarReferenceLine } from "../graph/GraphBarReferenceLine"
+import { GraphPie } from "../graph/GraphPie"
 
 export function Graph() {
   return (

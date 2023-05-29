@@ -1,5 +1,5 @@
 import { Bar, BarChart, XAxis, YAxis } from "recharts"
-import { graphData, renderCustomAxisTick } from "../../common/GraphCommon"
+import { graphData, renderCustomAxisTick } from "../common/GraphCommon"
 import { GraphResponsiveContainer } from "./GraphResponsiveContainer"
 
 const renderCustomBarLabel = ({ x, y, width, value }) => {
