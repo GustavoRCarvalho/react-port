@@ -9,3 +9,4 @@ Icons: https://react-icons.github.io/react-icons
 
 React Hook Form: https://react-hook-form.com/
 Zod: https://zod.dev/
+React Hook Form: https://www.react-hook-form.com/
