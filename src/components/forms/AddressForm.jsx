@@ -76,23 +76,34 @@ export const AddressForm = () => {
   return (
     <div className="FormContainer">
       <form onSubmit={handleSubmit(createAddress)} className="AddressForm">
-        <TextFieldControllerComponent
-          control={control}
-          name="title"
+        <TextField
+          {...register("title")}
+          type="text"
+          variant="outlined"
+          margin="normal"
           label="Título*"
           placeholder="Casa, apartamento, trabalho..."
+          error={!!errors.firstName}
           fullWidth={true}
         />
         <Divider className="Divider">Responsável</Divider>
-        <TextFieldControllerComponent
-          control={control}
-          name="firstName"
+        <TextField
+          {...register("firstName")}
+          type="text"
+          variant="outlined"
+          margin="normal"
           label="Nome*"
+          error={!!errors.firstName}
+          className="TextFieldHalf"
         />
-        <TextFieldControllerComponent
-          control={control}
-          name="lastName"
+        <TextField
+          {...register("lastName")}
+          type="text"
+          variant="outlined"
+          margin="normal"
           label="Sobrenome*"
+          error={!!errors.lastName}
+          className="TextFieldHalf"
         />
         <Divider className="Divider">Endereço</Divider>
         <ReactInputMask
