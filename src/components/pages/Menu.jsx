@@ -6,9 +6,10 @@ import TabPanel from "@mui/lab/TabPanel"
 import { useState } from "react"
 import { Graph } from "./Graph"
 import { Forms } from "./Forms"
+import { Players } from "./Players"
 
 export function Menu() {
-  const [value, setValue] = useState("Formulários")
+  const [value, setValue] = useState("Players")
   const handleChange = (event, newValue) => {
     setValue(newValue)
   }
@@ -19,6 +20,7 @@ export function Menu() {
           <Tab label="Home" value="Home" />
           <Tab label="Formulários" value="Formulários" />
           <Tab label="Gráfico" value="Gráfico" />
+          <Tab label="Players" value="Players" />
         </TabList>
       </Box>
       <TabPanel value="Home">Home</TabPanel>
@@ -27,6 +29,9 @@ export function Menu() {
       </TabPanel>
       <TabPanel value="Gráfico">
         <Graph />
+      </TabPanel>
+      <TabPanel value="Players">
+        <Players />
       </TabPanel>
     </TabContext>
   )
